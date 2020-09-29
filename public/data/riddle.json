@@ -1,0 +1,64 @@
+[
+  [
+    {
+      "color": "black"
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "black"
+    },
+    {
+      "color": "black",
+      "figure": 8
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "white",
+      "figure": 7
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "black"
+    }
+  ],
+  [
+    {
+      "color": "white"
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "white",
+      "figure": 2
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "white",
+      "figure": 6
+    },
+    {
+      "color": "white"
+    }
+  ],
+]

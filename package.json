@@ -1,0 +1,30 @@
+{
+  "name": "str8ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel --no-cache public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mads4000/str8ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mads4000/str8ts/issues"
+  },
+  "homepage": "https://github.com/mads4000/str8ts#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@technik-sde/eslint-config-sz-magazin": "^1.1.1",
+    "core-js": "^3.6.5",
+    "current-script-polyfill": "^1.0.0",
+    "es6-promise": "^4.2.8",
+    "parcel-bundler": "^1.12.4",
+    "regenerator-runtime": "^0.13.5",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
