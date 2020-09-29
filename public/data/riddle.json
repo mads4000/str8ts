@@ -14,14 +14,14 @@
     },
     {
       "color": "black",
-      "figure": 8
+      "value": 8
     },
     {
       "color": "white"
     },
     {
       "color": "white",
-      "figure": 7
+      "value": 7
     },
     {
       "color": "white"
@@ -45,7 +45,7 @@
     },
     {
       "color": "white",
-      "figure": 2
+      "value": 2
     },
     {
       "color": "white"
@@ -55,10 +55,10 @@
     },
     {
       "color": "white",
-      "figure": 6
+      "value": 6
     },
     {
       "color": "white"
     }
-  ],
+  ]
 ]

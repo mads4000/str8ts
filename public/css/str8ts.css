@@ -1,0 +1,10 @@
+.row {
+  list-style: none;
+  display: flex;
+}
+
+.cell {
+  position: relative;
+  height: 2.8em;
+  width: 8.33%;
+}
