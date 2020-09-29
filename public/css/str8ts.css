@@ -41,6 +41,42 @@
   color: white
 }
 
+.white>.bold {
+  font-weight: bold;
+}
+
+.controls {
+  margin-top: 30px;
+}
+
+.validate-button {
+  background-color: rgba(253, 242, 190, 0);
+  border: solid .25rem #2c2c2f;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 15em;
+  outline: 0;
+  padding: .6rem 2rem;
+  -webkit-transition: background-color .25s;
+  transition: background-color .25s;
+  white-space: nowrap;
+}
+
+.error {
+  color: red;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.unsure {
+  font-size: 0.7rem;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
