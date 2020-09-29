@@ -49,7 +49,8 @@ const createGrid = () => {
       let input = '';
 
       if (column.value) {
-        input = `<input class="cell-input bold" type="number" inputmode="verbatim" min="0" max="9" disabled="true" data-validate="true" value="${column.value}"/>`
+        const cssClass = column.predefined ? 'cell-input bold' : 'cell-input';
+        input = `<input class="${cssClass}" type="number" inputmode="verbatim" min="0" max="9" disabled="true" data-validate="true" value="${column.value}"/>`
       } else if (column.color === 'black') {
         input = `<input class="cell-input" type="number" inputmode="verbatim" min="0" max="9" disabled="true"/>`;
       } else {
