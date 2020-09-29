@@ -1,10 +1,61 @@
+.playground {
+  width: 500px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
 .row {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .cell {
   position: relative;
   height: 2.8em;
-  width: 8.33%;
+  width: 11.11%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.cell-input {
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  cursor: default;
+  color: transparent;
+  background-color: transparent;
+  text-shadow: 0 0 0 black;
+  caret-color: transparent;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Standard syntax */
+}
+
+.black>.cell-input {
+  background-color: black;
+  color: white
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

@@ -10,8 +10,8 @@ const createGrid = () => {
   const grid = data.reduce((rows, row) => {
     const rowHtml = row.reduce((columns, column) => {
       const input = column.value ?
-        `<input type="text" autocomplete="off" autocorrect="off" inputmode="verbatim" spellcheck="false" disabled="true" value="${column.value}"/>` :
-        `<input type="text" autocomplete="off" autocorrect="off" inputmode="verbatim" spellcheck="false" />`
+        `<input class="cell-input" type="number" inputmode="verbatim" min="0" max="9" disabled="true" value="${column.value}"/>` :
+        `<input class="cell-input" type="number" inputmode="verbatim" min="0" max="9" />`
 
       return `${columns}
         <li class="cell ${column.color}">
