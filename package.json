@@ -19,7 +19,6 @@
   "homepage": "https://github.com/mads4000/str8ts#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
-    "@technik-sde/eslint-config-sz-magazin": "^1.1.1",
     "core-js": "^3.6.5",
     "current-script-polyfill": "^1.0.0",
     "es6-promise": "^4.2.8",
