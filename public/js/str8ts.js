@@ -4,7 +4,7 @@ import data from '../data/riddle.json';
 const hasDuplicates = array => new Set(array).size !== array.length;
 const validValue = value => Number.isInteger(value) && value > 0 && value <= 9;
 
-const validateRow = () => {
+const validateRow = (index) => {
   const columnValues = [];
   qsa(`[data-row-idx="${index}"] > [data-validate="true"]`).forEach(elem => columnValues.push(Number.parseInt(elem.value)));
 
