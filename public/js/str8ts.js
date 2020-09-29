@@ -10,7 +10,7 @@ const validateRow = (index) => {
 
   let validValues = true;
   columnValues.forEach(elem => validValues = validValues && validValue(elem));
-  
+
   return validValues && !hasDuplicates(columnValues);
 };
 
@@ -26,16 +26,17 @@ const validateColumn = (index) => {
 
 
 const validate = () => {
+  let result = true;
   for (let i = 0; i < 8; i++) {
-    const result = validateColumn(i) && validateRow(i);
+    result = result && validateColumn(i) && validateRow(i);
+  }
 
-    if (!result) {
-      qs('.error').classList.remove('hidden');
-    } else {
-      qs('.playground').classList.add('hidden');
-      qs('.controls').classList.add('hidden');
-      qs('.success').classList.remove('hidden');
-    }
+  if (!result) {
+    qs('.error').classList.remove('hidden');
+  } else {
+    qs('.playground').classList.add('hidden');
+    qs('.controls').classList.add('hidden');
+    qs('.success').classList.remove('hidden');
   }
 };
 
@@ -78,7 +79,7 @@ domReady(() => {
 
   qsa('.cell-input').forEach(input => {
     input.addEventListener('keydown', () => {
-      qs('.error').classList.add('hidden'); 
+      qs('.error').classList.add('hidden');
     })
   });
 
