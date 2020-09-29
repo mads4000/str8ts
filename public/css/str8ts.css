@@ -41,6 +41,10 @@
   color: white
 }
 
+.white>.bold {
+  font-weight: bold;
+}
+
 .controls {
   margin-top: 30px;
 }

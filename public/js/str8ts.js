@@ -31,6 +31,10 @@ const validate = () => {
 
     if (!result) {
       qs('.error').classList.remove('hidden');
+    } else {
+      qs('.playground').classList.add('hidden');
+      qs('.controls').classList.add('hidden');
+      qs('.success').classList.remove('hidden');
     }
   }
 };
@@ -45,7 +49,7 @@ const createGrid = () => {
       let input = '';
 
       if (column.value) {
-        input = `<input class="cell-input" type="number" inputmode="verbatim" min="0" max="9" disabled="true" data-validate="true" value="${column.value}"/>`
+        input = `<input class="cell-input bold" type="number" inputmode="verbatim" min="0" max="9" disabled="true" data-validate="true" value="${column.value}"/>`
       } else if (column.color === 'black') {
         input = `<input class="cell-input" type="number" inputmode="verbatim" min="0" max="9" disabled="true"/>`;
       } else {
